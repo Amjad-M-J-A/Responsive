@@ -1,0 +1,429 @@
+/*start Global Rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+
+
+}
+
+body{
+font-family: 'Droid Sans',sans-serif;
+height: 3000px;
+}
+
+/*End Global Rules*/
+/* start Header */
+
+.header{
+
+background: url(../imges/img1.jpg) no-repeat top center;
+
+-webkit-background-size: cover;
+-moz-background-size: cover ;
+background-size:cover ;
+min-height: 500px;
+position: relative;
+
+}
+.header .overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+color: #FFF;
+background-color: rgba(0, 168, 255, .5);
+
+
+
+
+}
+.header .overlay h1{
+font-size: 60px;
+margin-top: 100px;
+}
+
+.text-center{
+
+text-align: center;
+}
+
+.header .overlay .plan{
+border: 2px solid #FFF;
+font-size: 24px;
+width:48%;
+float: left;
+padding: 20px;
+margin-left: 1%;
+margin-right: 1%;
+
+
+}
+
+.header .overlay .order{
+border: 2px solid #FFF;
+font-size: 24px;
+padding: 20px;
+margin: 30px 1% 0;
+
+
+}
+.clearfix{
+clear: both;
+}
+
+
+
+/*start my framework*/
+.container{
+margin:auto;
+padding-left: 15px;
+padding-right: 15px;
+
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg
+{
+display: none;
+}
+/* End Header */
+
+/*start Header*/
+
+.features .feat {
+float: left;
+width:33.33333%;
+color: #555;
+padding:0 20px 0 0;
+}
+
+.features .h1{
+font-size: 50px;
+color: #555;
+}
+
+.h1{
+font-size: 2em;
+}
+.features .feat h2{
+margin: 10px 0 8px;
+}
+
+.features .feat p{
+margin:0;
+line-height:1.6;
+}
+.features{
+padding: 30px;
+}
+.feat{
+margin-top: 30px;
+
+}
+/*End Header*/
+/*Start About Us*/
+.about-us{
+background-color: #ececec;
+padding: 30px ;
+}
+.about-us .h1{
+font-size: 50px;
+color: #848484;
+}
+
+/*End About Us*/
+
+.responsive-paragraph{
+line-height: 1.8;
+text-align: justify;
+margin: auto;
+/*width: 900px;*/
+}
+
+.about-us .responsive-paragraph{
+color:#848484;
+font-size: 22px;
+}
+/*Start Our Works*/
+.responsive-image{
+width: 100%;
+}
+.classic-list{
+margin: 0;
+padding: 0;
+list-style:none;
+}
+.pricing-table .pricing-plan{
+
+float: left;
+border: 3px solid #FFF;
+padding: 20px 0;
+position: relative;
+border-radius: 10px;
+}
+
+.pricing-table .pricing-plan h3{
+margin: 0 0 10px;
+font-size: 26px;
+}
+
+.pricing-table .pricing-plan .pricing{
+display: inline-block;
+margin: 0 0 10px;
+font-size: 22px;
+color: #bfbfbf;
+}
+
+.pricing-table .pricing-plan ul{
+line-height: 2;
+font-size: 18px;
+}
+
+
+
+
+@media (min-width:768px){
+.our-works .image{
+width: 50%;
+float: left;
+}
+}
+
+
+@media (min-width:992px){
+.our-works .image{
+width: 33.3333333%;
+float: left;
+}
+}
+
+@media (min-width:1200px){
+.our-works .image{
+width: 25%;
+float: left;
+}
+}
+
+
+
+
+/*End Our Works*/
+
+.for-border{
+border: 1px black;
+border-radius: 10px;
+}
+/*Start Our Pricing Table*/
+.pricing-table{
+background-color: #444;
+color: #FFF;
+padding: 50px 0;
+}
+
+.pricing-table .h1{
+margin: 0 0 40px;
+font-size: 50px;
+}
+
+
+
+
+@media(max-width: 767px){
+.pricing-table .pricing-plan{
+width: 100%;
+margin-bottom: 20px;
+}
+
+
+}
+
+
+
+@media(min-width: 768px){
+.pricing-table .pricing-plan{
+width: 100%;
+margin-bottom: 20px;
+}
+
+}
+
+
+
+@media(min-width: 992px){
+.pricing-table .pricing-plan:not(.Ultimate){
+margin-right: 1%;
+}
+.pricing-table .pricing-plan{
+width: 32.666666%;
+margin-bottom: 0px;
+}
+.pricing-table .pricing-plan.Plus{
+left: 33.66666%;
+}
+
+.pricing-table .pricing-plan.Premium{
+right: 33.66666%;
+}
+
+}
+/*End Our Pricing Table*/
+/*Start What They Say*/
+
+.they-say{
+padding: 50px 0;
+}
+.they-say .h1{
+font-size: 50px;
+margin: 0 0 40px;
+color: #555;
+}
+
+.they-say .person-say{
+background-color: #EEE;
+padding: 20px;
+margin: 0 0 20px;
+border: 1px solid #DDD;
+float: left;
+border-radius: 10px;
+}
+.they-say .person-say h1{
+    margin: 0 0 10px;
+
+}
+
+
+.they-say .person-say p{
+    margin: 0;
+line-height: 1.5;
+}
+
+
+
+
+@media (min-width:768px){
+.they-say .person-say:first-of-type{
+width:100%;
+
+}
+
+.they-say .person-say:not(first-of-type){
+width: 49%;
+
+}
+
+.they-say .person-say:last-of-type{
+margin-left: 2%;
+}
+
+}
+
+
+
+
+
+@media (min-width:992px){
+.they-say .person-say:first-of-type{
+width:80%;
+margin-left: 10%;
+
+}
+
+}
+
+
+/*End What They Say*/
+
+
+@media (max-width:767px) {
+/* هان انا ما حطيت container عشان بدي اياه يملي الشاشة */
+/*.visible-xs{
+display: block;
+}*/
+
+.hidden-xs{
+display: none ;!important
+}
+
+}
+
+
+@media (min-width:420px) {
+h1{
+margin-top: 20px; !important;
+}
+.visible-sm{
+display: block ;!important
+}
+}
+
+@media (min-width:768px) {
+.features .feat:first-of-type{
+width: 100%;
+margin-top: -30px;
+
+}
+.features .feat:not(first-of-type){
+width:50%;
+}
+
+
+}
+@media (max-width:768px) {
+.features .feat{
+    width: 80%;
+text-align: center;
+margin-left: 35px;
+}
+
+
+
+.responsive-paragraph{
+text-align: center;
+font-size: 10px; !important
+width: 250px;
+}
+
+
+
+}
+
+
+
+
+@media (min-width:768px) and (max-width:991px) {
+.container{
+width: 750px;
+}
+.visible-md{
+display: block; !important
+}
+
+.hidden-sm{
+display: block ;!important
+}
+
+}
+
+
+
+
+@media (min-width:992px) {
+.container{
+width: 970px;
+}
+
+}
+
+@media (min-width:1200px) {
+.container{
+width: 1170px;
+}
+.visible-sm{
+display: block;!important
+}
+}
+    
